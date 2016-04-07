@@ -11,6 +11,7 @@ import java.io.FileNotFoundException;
 public class MainActivity extends AppCompatActivity {
     private TextView textView;
     private Button button;
+    private String y="dfdslj";
     private static  String  TAG="MainActivity";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
