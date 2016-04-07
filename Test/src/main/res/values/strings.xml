@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="My_name">Stephen Curry</string>
+    <string name="query">查询</string>
+    <string name="yanai">闫凯</string>
+    <string name="zhangqiang">张强</string>
+    <string name="lijianwei">李建伟</string>
+    <string name="mahaichao">马海超</string>
+    <string name="dialog">点击出现对话框</string>
+    <string-array name="cities">
+        <item>北京</item>
+        <item>上海</item>
+        <item>南京</item>
+        <item>太原</item>
+        <item>吕梁</item>
+        <item>柳林</item>
+    </string-array>
+    <string-array name="company">
+        <item>中国联通</item>
+        <item>中国移动</item>
+        <item>中国电信</item>
+    </string-array>
+</resources>
