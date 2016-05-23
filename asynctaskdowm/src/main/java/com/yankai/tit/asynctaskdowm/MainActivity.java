@@ -63,16 +63,18 @@ public class MainActivity extends AppCompatActivity {
                 byte[] buf=new byte[1024];
                 int count=0;
                 int length=-1;
-                while ((length=is.read())!=-1){
+                while ((length=is.read(buf))!=-1){
                     byteArrayOutputStream.write(buf,0,length);
                     count=count+length;
-                    Log.d(TAG, "doInBackground: "+count);
-                    Log.d(TAG, "doInBackground: "+(count/(float)total)*100);
+                    Log.d(TAG, "doInBackground: "+length);
+                   // Log.d(TAG, "doInBackground: "+(count/(float)total)*100);
                     publishProgress((int)((count/(float)total)*100));
+                    //publishProgress((count/total)*100);
                     Thread.sleep(300);
                 }
                 downContent= byteArrayOutputStream.toString();
                 conn.disconnect();
+                Log.d(TAG, "doInBackground: "+downContent);
             } catch (Exception e) {
                 e.printStackTrace();
             }
