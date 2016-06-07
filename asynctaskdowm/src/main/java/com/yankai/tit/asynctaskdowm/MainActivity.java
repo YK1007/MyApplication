@@ -18,6 +18,7 @@ import java.net.URL;
 public class MainActivity extends AppCompatActivity {
     private ProgressDialog progressDialog;
     private Button button;
+    //private Button button2;
     private TextView textView;
     private static final String TAG = "MainActivity";
 
@@ -45,6 +46,9 @@ public class MainActivity extends AppCompatActivity {
                 myAsyncTask.execute("https://www.baidu.com/");
             }
         });
+
+        //button2 = (Button) findViewById(R.id.button2);
+
     }
     private class MyAsyncTask extends AsyncTask<String,Integer,String>{
 
