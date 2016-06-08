@@ -27,6 +27,9 @@ public class MainActivity extends AppCompatActivity {
         btn_stop= (Button) findViewById(R.id.btn_stop);
 
        final  Intent ServiceIntent=new Intent();
+        /*
+        启动服务
+         */
         btn_start.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -37,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
+//增加service的停止
         btn_stop.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
