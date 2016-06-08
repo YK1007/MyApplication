@@ -11,6 +11,7 @@ import java.security.PrivateKey;
 
 public class MainActivity extends AppCompatActivity {
     private static String TAG="MyService";
+    //private static final String TAG = "MainActivity";
     private Button btn_start;
     private Button btn_stop;
 
@@ -32,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
                 ServiceIntent.setClass(MainActivity.this,MyService.class);
                 startService(ServiceIntent);
                 Log.i(TAG,"StartService");
+                Log.d(TAG, "onClick:");
             }
         });
 
