@@ -38,15 +38,22 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private void InintView() {
 
         Button[0] = (android.widget.Button) findViewById(R.id.button);
-        Button[0].setOnClickListener(this);
+        if (Button[0] != null) {
+            Button[0].setOnClickListener(this);
+        }
 
         Button[1] = (android.widget.Button) findViewById(R.id.button2);
-        Button[1].setOnClickListener(this);
+        if (Button[1] != null) {
+            Button[1].setOnClickListener(this);
+        }
 
         Button[2] = (android.widget.Button) findViewById(R.id.button3);
-        Button[2].setOnClickListener(this);
+        if (Button[2] != null) {
+            Button[2].setOnClickListener(this);
+        }
 
         Button[3] = (android.widget.Button) findViewById(R.id.button4);
+        assert Button[3] != null;
         Button[3].setOnClickListener(this);
 
         editText = (EditText) findViewById(R.id.editText);
