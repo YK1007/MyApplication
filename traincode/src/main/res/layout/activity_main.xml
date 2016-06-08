@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/Start_City"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:hint="Start City"
+        android:lines="1" />
+
+    <EditText
+        android:id="@+id/Arrive_City"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/Start_City"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/Start_City"
+        android:layout_marginTop="37dp"
+        android:hint="Arrive City"
+        android:lines="1" />
+
+    <Button
+        android:id="@+id/query"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/Arrive_City"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="查询" />
+
+    <LinearLayout
+        android:id="@+id/Code"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/query"
+        android:layout_marginTop="70dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="车次号："
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/Code_Edit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:lines="1" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/Code_query"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/Code"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="车次查询" />
+</RelativeLayout>
